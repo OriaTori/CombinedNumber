@@ -30,5 +30,10 @@ TEST_F(CombinedNumberTests, whenTwoIsGivenString2IsReturn)
 TEST_F(CombinedNumberTests, when3ArgsIsGivenStringIsReturn)
 {
     auto result = cn.constructGreatestNumber({1,2,3});
-    ASSERT_EQ(result, "123");
+    ASSERT_EQ(result, "321");
+}
+TEST_F(CombinedNumberTests, whenSingleDigitsGivenDecreasingOrderInString)
+{
+    auto result = cn.constructGreatestNumber({8,7,9});
+    ASSERT_EQ(result, "987");
 }

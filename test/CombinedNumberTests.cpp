@@ -37,3 +37,8 @@ TEST_F(CombinedNumberTests, whenSingleDigitsGivenDecreasingOrderInString)
     auto result = cn.constructGreatestNumber({8,7,9});
     ASSERT_EQ(result, "987");
 }
+TEST_F(CombinedNumberTests, whenNotSingleDigitsGivenDecreasingOrderInString)
+{
+    auto result = cn.constructGreatestNumber({8,70,9});
+    ASSERT_EQ(result, "9870");
+}

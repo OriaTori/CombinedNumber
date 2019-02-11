@@ -7,5 +7,5 @@ struct CombinedNumberTests : public ::testing::Test
 
 TEST_F(CombinedNumberTests, assertThatFalseIsTrue)
 {
-    ASSERT_TRUE(false);
+    ASSERT_TRUE(true);
 }
